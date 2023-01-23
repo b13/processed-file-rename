@@ -1,0 +1,19 @@
+{
+	"name": "b13/processed-file-rename",
+	"type": "typo3-cms-extension",
+	"description": "Rename processed files when a file is renamed",
+	"version": "1.0.0",
+	"require": {
+		"typo3/cms-backend": "^10.4 || ^11.5 || ^12.1"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "processed_file_rename"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"B13\\ProcessedFileRename\\": "Classes/"
+		}
+	}
+}

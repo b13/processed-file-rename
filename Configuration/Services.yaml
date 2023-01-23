@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  B13\ProcessedFileRename\:
+    resource: '../Classes/*'
+
+  B13\ProcessedFileRename\EventListener\DeleteProcessedFilesAfterRename:
+    tags:
+      - name: event.listener
+        identifier: 'processedFileRename'
+        event: TYPO3\CMS\Core\Resource\Event\AfterFileRenamedEvent
